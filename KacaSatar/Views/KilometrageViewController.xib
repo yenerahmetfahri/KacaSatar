@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KilometrageViewController" customModule="KacaSatar" customModuleProvider="target">
+            <connections>
+                <outlet property="continueButton" destination="lIh-ew-bUq" id="y6b-Rj-ZHH"/>
+                <outlet property="kilometrageTextField" destination="LNI-Y0-mRY" id="3Kq-Td-H2h"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="123.456" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LNI-Y0-mRY">
+                    <rect key="frame" x="16" y="409" width="361" height="34"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIh-ew-bUq" customClass="CustomButton" customModule="KacaSatar" customModuleProvider="target">
+                    <rect key="frame" x="16" y="728.66666666666663" width="361" height="41.333333333333371"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button">
+                        <fontDescription key="titleFontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="continueButtonAction:" destination="-1" eventType="touchUpInside" id="Oha-oS-tAh"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kilometre bilgisini giriniz:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzF-WC-ujG">
+                    <rect key="frame" x="16" y="376.33333333333331" width="205" height="24.666666666666686"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="LNI-Y0-mRY" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="15g-qz-Z1l"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LNI-Y0-mRY" secondAttribute="trailing" constant="16" id="AAk-lF-5Iz"/>
+                <constraint firstItem="LNI-Y0-mRY" firstAttribute="top" secondItem="uzF-WC-ujG" secondAttribute="bottom" constant="8" id="BnR-92-xKW"/>
+                <constraint firstItem="lIh-ew-bUq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="M8w-hN-WUv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lIh-ew-bUq" secondAttribute="trailing" constant="16" id="Sqt-dH-DeD"/>
+                <constraint firstItem="uzF-WC-ujG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="UOP-Xq-ACB"/>
+                <constraint firstItem="LNI-Y0-mRY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Zyx-kM-aAg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="lIh-ew-bUq" secondAttribute="bottom" constant="48" id="lb4-iR-e3e"/>
+                <constraint firstItem="LNI-Y0-mRY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="z6a-J0-V5v"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kasa Tipini Seçiniz:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HZz-UF-IRI">
+            <rect key="frame" x="0.0" y="0.0" width="137" height="22"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="111" y="-71"/>
+        </label>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kasa Tipini Seçiniz:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8fU-0I-XXC">
+            <rect key="frame" x="0.0" y="0.0" width="137" height="22"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="639" y="-11"/>
+        </label>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TrimsListViewController" customModule="KacaSatar" customModuleProvider="target">
+            <connections>
+                <outlet property="bodyTypeTextField" destination="zrl-eZ-w2a" id="ICd-jI-hEH"/>
+                <outlet property="engineTypeTextField" destination="fpT-NV-nyZ" id="UFo-ns-KJj"/>
+                <outlet property="transmissionTypeTextField" destination="seo-jD-xFY" id="OmA-bF-DeG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Seçiniz" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zrl-eZ-w2a">
+                    <rect key="frame" x="16" y="107.66666666666667" width="361" height="34.000000000000014"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kasa Tipini Seçiniz:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aC0-FM-Cdw">
+                    <rect key="frame" x="16" y="75" width="153.33333333333334" height="24.666666666666671"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Seçiniz" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fpT-NV-nyZ">
+                    <rect key="frame" x="16" y="190.33333333333334" width="361" height="34.333333333333343"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yakıt Tipini Seçiniz:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yud-Lu-8QX">
+                    <rect key="frame" x="16" y="157.66666666666666" width="154.33333333333334" height="24.666666666666657"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Seçiniz" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="seo-jD-xFY">
+                    <rect key="frame" x="16" y="273.33333333333331" width="361" height="34"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vites Tipini Seçiniz:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aB6-N8-t0i">
+                    <rect key="frame" x="16" y="240.66666666666666" width="155" height="24.666666666666657"/>
+                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9h-2J-5oK" customClass="CustomButton" customModule="KacaSatar" customModuleProvider="target">
+                    <rect key="frame" x="16" y="728.66666666666663" width="361" height="41.333333333333371"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Devam">
+                        <fontDescription key="titleFontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="continueButtonAction:" destination="-1" eventType="touchUpInside" id="dgC-t9-xIv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fpT-NV-nyZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="6Uo-cz-yQB"/>
+                <constraint firstItem="fpT-NV-nyZ" firstAttribute="top" secondItem="yud-Lu-8QX" secondAttribute="bottom" constant="8" id="7p6-dY-TwV"/>
+                <constraint firstItem="aB6-N8-t0i" firstAttribute="top" secondItem="fpT-NV-nyZ" secondAttribute="bottom" constant="16" id="If7-mM-3cT"/>
+                <constraint firstItem="zrl-eZ-w2a" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="JVZ-Pn-ebn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fpT-NV-nyZ" secondAttribute="trailing" constant="16" id="Kai-Vg-rQy"/>
+                <constraint firstItem="aC0-FM-Cdw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="VEy-F9-TTI"/>
+                <constraint firstItem="yud-Lu-8QX" firstAttribute="top" secondItem="zrl-eZ-w2a" secondAttribute="bottom" constant="16" id="WjR-SA-Zuw"/>
+                <constraint firstItem="seo-jD-xFY" firstAttribute="top" secondItem="aB6-N8-t0i" secondAttribute="bottom" constant="8" id="Wng-SB-5Na"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="seo-jD-xFY" secondAttribute="trailing" constant="16" id="WrH-9V-TiN"/>
+                <constraint firstItem="aB6-N8-t0i" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="XTr-jg-gcv"/>
+                <constraint firstItem="zrl-eZ-w2a" firstAttribute="top" secondItem="aC0-FM-Cdw" secondAttribute="bottom" constant="8" id="Y80-fA-LoD"/>
+                <constraint firstItem="seo-jD-xFY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Zav-jK-WL7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="e9h-2J-5oK" secondAttribute="trailing" constant="16" id="lTX-x2-fGz"/>
+                <constraint firstItem="aC0-FM-Cdw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="nd6-eh-c4M"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zrl-eZ-w2a" secondAttribute="trailing" constant="16" id="oRQ-QS-jD5"/>
+                <constraint firstItem="yud-Lu-8QX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="vQh-1T-htQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="e9h-2J-5oK" secondAttribute="bottom" constant="48" id="vXs-Bd-uPf"/>
+                <constraint firstItem="e9h-2J-5oK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ykG-E4-Jas"/>
+            </constraints>
+            <point key="canvasLocation" x="26.717557251908396" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
