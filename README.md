@@ -3,14 +3,6 @@
 
 Bu Proje Kaçasatar API ile geliştirilmiş bir otomobil değeri hesaplama uygulamasıdır.
 
-
-## Özellikler
-
-- Açık/koyu mod geçişi
-- Canlı ön izleme
-- Tam ekran modu
-- Tüm platformlara destek
-
   
 ## Teknolojiler
 
